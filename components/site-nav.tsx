@@ -18,21 +18,19 @@ export function SiteNav() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-[4.25rem] md:px-8 lg:px-12">
           <Link
             href="/"
-            className="flex items-center gap-3"
+            className="inline-flex shrink-0 items-center"
             transitionTypes={["nav-back"]}
             onClick={() => setOpen(false)}
+            aria-label={site.name}
           >
             <Image
               src="/logo.png"
-              alt={site.name}
+              alt=""
               width={36}
               height={36}
               className="size-9 object-contain"
               priority
             />
-            <span className="hidden text-sm font-medium tracking-tight sm:inline">
-              {site.name}
-            </span>
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
