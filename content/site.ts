@@ -8,9 +8,8 @@ export const site: SiteContent = {
   availability: "Agustin Alberdi",
   email: "agustinalberdi1@icloud.com",
   url: "https://agustinalberdi.vercel.app/",
-  headline: "Engineering you can ship.",
-  subhead:
-    "I build data-heavy products end to end — the interface people touch and the systems that keep it running.",
+  headline: "Engineering that holds up.",
+  subhead: "I help teams turn product problems into software that ships.",
   bio: [
     "Full stack engineer with a frontend-first background in large data-flow applications. I spent years shipping production UIs in Angular, RxJS, and TypeScript, and I also work in React and Next.js when the product calls for it.",
     "Now I take work from first pixel to production: interfaces, APIs, and the product decisions in between. I care about performance, reusable architecture, and making complex flows feel simple.",

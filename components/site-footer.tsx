@@ -10,7 +10,7 @@ export function SiteFooter() {
       <Container className="py-24 md:py-32">
         <StatusPill />
         <h2 className="mt-8 max-w-4xl text-[clamp(2.25rem,6vw,4.5rem)] font-medium leading-[0.95] tracking-[-0.04em]">
-          Curious what we can ship together?
+          Curious what we can build together?
         </h2>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
           {site.role} · {site.location}. Send the problem, the constraints, and
