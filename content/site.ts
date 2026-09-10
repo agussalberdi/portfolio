@@ -7,7 +7,7 @@ export const site: SiteContent = {
   location: "Argentina",
   availability: "Available for work",
   email: "agustinalberdi1@gmail.com",
-  url: "https://agustinalberdi.com",
+  url: "https://agustinalberdi.vercel.app/",
   headline: "Engineering you can ship.",
   subhead:
     "I build data-heavy products end to end — the interface people touch and the systems that keep it running.",
