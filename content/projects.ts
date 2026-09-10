@@ -1,0 +1,90 @@
+import type { Project } from "./types";
+
+export const projects: Project[] = [
+  {
+    slug: "solarfy",
+    name: "Solarfy",
+    tagline: "Solar savings, quantified.",
+    description:
+      "Full-stack estimator for residential solar in Argentina — panels, ROI, and a path to certified installers.",
+    role: "Full stack",
+    year: "2026",
+    stack: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
+    image: "/projects/solarfy.svg",
+    featured: true,
+    body: [
+      "Solarfy is a current product: a calculator that turns a household energy bill into a concrete solar plan — panel count, payback, and installer quotes under Argentina’s distributed-generation rules.",
+      "The work spans the interface, the estimation model, and the account/admin surfaces. Treat this writeup as a placeholder to tighten once the public launch copy is locked.",
+    ],
+  },
+  {
+    slug: "rick-morty",
+    name: "Rick & Morty",
+    tagline: "Catalog the multiverse.",
+    description:
+      "Explorer for characters, episodes, and locations from the show — search, browse, and persist.",
+    role: "Frontend",
+    year: "2021",
+    stack: ["Angular", "TypeScript", "RxJS", "Firebase", "Angular Material"],
+    liveUrl: "https://rick-morty-angular.netlify.app/",
+    repoUrl: "https://github.com/agussalberdi/rick-morty-app",
+    image: "/projects/rick-morty.png",
+    featured: true,
+    body: [
+      "A catalog app over the Rick and Morty API: characters, episodes, and locations with the kind of list/detail flow you actually have to get right in production dashboards.",
+      "Angular + RxJS for the data layer, Firebase where persistence was needed, Material for a dense but readable UI.",
+    ],
+  },
+  {
+    slug: "whg",
+    name: "WHG Test",
+    tagline: "Find the jackpot.",
+    description:
+      "Frontend assessment for White Hat Gaming: search casino games by category and live jackpots.",
+    role: "Frontend",
+    year: "2021",
+    stack: ["Angular", "TypeScript", "RxJS", "SCSS"],
+    liveUrl: "https://whitehat-gaming-test.netlify.app/",
+    repoUrl: "https://github.com/agussalberdi/whitehat-gaming-angular-test",
+    image: "/projects/whg.png",
+    featured: true,
+    body: [
+      "A take-home that had to feel like a real casino lobby: filter by category, surface jackpots, keep the list responsive under changing data.",
+      "Built in Angular 10 with RxJS streams driving search and category state — the same patterns used in data-heavy product UIs.",
+    ],
+  },
+  {
+    slug: "landa",
+    name: "LANDA",
+    tagline: "A law studio, on the page.",
+    description: "Marketing site for Landa, a law studio.",
+    role: "Frontend",
+    year: "2020",
+    stack: ["HTML", "CSS", "JavaScript", "jQuery"],
+    liveUrl: "https://landing-landa.netlify.app",
+    repoUrl: "https://github.com/agussalberdi/Landa",
+    image: "/projects/landa.png",
+    featured: false,
+    body: [
+      "A focused landing page for a law studio: hierarchy, trust, and a clear path to contact.",
+      "HTML, CSS, and JavaScript — no framework for a site that did not need one.",
+    ],
+  },
+  {
+    slug: "segumax",
+    name: "SEGUMAX",
+    tagline: "Insurance, introduced.",
+    description: "Marketing site for Segumax, an insurance company.",
+    role: "Frontend",
+    year: "2020",
+    stack: ["HTML", "CSS", "JavaScript", "jQuery"],
+    liveUrl: "https://home-seguros.netlify.app",
+    repoUrl: "https://github.com/agussalberdi/home-seguros",
+    image: "/projects/segumax.png",
+    featured: false,
+    body: [
+      "Homepage for an insurance brand: services, proof, and a conversion path that stays readable on mobile.",
+      "Same vanilla stack as LANDA — intentional, not a limitation.",
+    ],
+  },
+];
