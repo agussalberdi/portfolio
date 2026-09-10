@@ -1,6 +1,7 @@
 "use client";
 
 import { ViewTransition } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -21,9 +22,14 @@ export function SiteNav() {
             transitionTypes={["nav-back"]}
             onClick={() => setOpen(false)}
           >
-            <span className="font-mono text-xs tracking-[0.22em] text-accent">
-              {site.shortName}
-            </span>
+            <Image
+              src="/logo.png"
+              alt={site.name}
+              width={36}
+              height={36}
+              className="size-9 object-contain"
+              priority
+            />
             <span className="hidden text-sm font-medium tracking-tight sm:inline">
               {site.name}
             </span>
