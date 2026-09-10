@@ -11,7 +11,7 @@ export function Hero() {
         <div className="flex items-center justify-between gap-4">
           <StatusPill />
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-            SYS // {site.location}
+            {site.location}
           </p>
         </div>
 

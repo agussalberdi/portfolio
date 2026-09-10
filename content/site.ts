@@ -4,7 +4,7 @@ export const site: SiteContent = {
   name: "Agustin Alberdi",
   shortName: "AA",
   role: "Full Stack Engineer",
-  location: "Argentina",
+  location: "Buenos Aires, Argentina",
   availability: "Agustin Alberdi",
   email: "agustinalberdi1@icloud.com",
   url: "https://agustinalberdi.vercel.app/",
