@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description:
       "AI surf companion with real-time vibe scores, forecasts, and board picks for your favourite breaks.",
     role: "Full stack",
-    year: "",
+    year: "2026",
     stack: ["Next.js", "TypeScript", "AI SDK", "Drizzle", "Stripe", "Auth.js"],
     image: "/projects/swellsense.png",
     featured: true,

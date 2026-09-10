@@ -5,8 +5,8 @@ export const site: SiteContent = {
   shortName: "AA",
   role: "Full Stack Engineer",
   location: "Argentina",
-  availability: "Available for work",
-  email: "agustinalberdi1@gmail.com",
+  availability: "Let's talk",
+  email: "agustinalberdi1@icloud.com",
   url: "https://agustinalberdi.vercel.app/",
   headline: "Engineering you can ship.",
   subhead:
@@ -18,8 +18,8 @@ export const site: SiteContent = {
   nav: [
     { label: "Work", href: "/#work" },
     { label: "About", href: "/#about" },
-    { label: "Capabilities", href: "/#capabilities" },
     { label: "Process", href: "/#process" },
+    { label: "Capabilities", href: "/#capabilities" },
     { label: "Contact", href: "/#contact" },
   ],
   socials: [
@@ -28,7 +28,7 @@ export const site: SiteContent = {
       href: "https://www.linkedin.com/in/agustinalberdi/",
     },
     { label: "GitHub", href: "https://github.com/agussalberdi" },
-    { label: "Email", href: "mailto:agustinalberdi1@gmail.com" },
+    { label: "Email", href: "mailto:agustinalberdi1@icloud.com" },
   ],
   skills: [
     { name: "TypeScript" },
@@ -41,10 +41,10 @@ export const site: SiteContent = {
     { name: "Next.js", added: true },
     { name: "Node", added: true },
     { name: "Tailwind", added: true },
-    { name: "SQL", added: true },
+    { name: "Supabase", added: true },
     { name: "Firebase" },
+    { name: "Vercel", added: true },
     { name: "Git" },
-    { name: "Jira" },
   ],
   experience: [
     {
@@ -74,7 +74,7 @@ export const site: SiteContent = {
       index: "02",
       title: "Build",
       description:
-        "Interface, data, and infrastructure in one pass. Reusable pieces, measurable performance, no theatre.",
+        "End-to-end delivery across interface, data, and infrastructure, with reusable architecture and measurable performance.",
     },
     {
       index: "03",
@@ -87,17 +87,17 @@ export const site: SiteContent = {
     {
       title: "Product frontend",
       description:
-        "Data-heavy interfaces in React and Angular — state, performance, and a user journey that stays fast on real devices.",
+        "Data-heavy interfaces in React and Angular, with a focus on performance and a user journey that stays fast on real devices.",
     },
     {
       title: "Full-stack apps",
       description:
-        "Next.js, APIs, and data models that match the UI. One engineer who can own the vertical slice.",
+        "Next.js, APIs, and data models that match the UI, with one engineer who can own the vertical slice.",
     },
     {
       title: "Design systems",
       description:
-        "Reusable components and tokens so the product stays coherent as it grows — and so an agency rename is a content change, not a rewrite.",
+        "Reusable components and tokens so the product stays coherent as it grows, reducing the cost of design changes and content updates.",
     },
     {
       title: "Performance",
@@ -106,8 +106,8 @@ export const site: SiteContent = {
     },
   ],
   stats: [
-    { value: "7+", label: "Years shipping product UIs" },
-    { value: "Full stack", label: "Interface to infrastructure" },
+    { value: "7+", label: "Years shipping large scale applications" },
+    { value: "Full stack", label: "From design to deployment" },
     { value: "UTC−3", label: "Argentina · remote-friendly" },
   ],
   articles: [
