@@ -20,7 +20,7 @@ This is a **Portfolite-inspired** personal site (dark, editorial, oversized type
 
 | File | Owns |
 | --- | --- |
-| `content/site.ts` | Name, role, headline, bio, nav, socials, skills, experience, process, capabilities, stats, articles, FAQ, SEO |
+| `content/site.ts` | Name, role, headline, bio, nav, socials, skills, optional `currentEmployer`, process, capabilities, stats, articles, FAQ, SEO |
 | `content/projects.ts` | All case studies |
 | `content/types.ts` | Shared types |
 | `content/index.ts` | Re-exports + `getProject`, `getFeaturedProjects`, `mailtoHref` |
@@ -43,7 +43,7 @@ Use these `id`s. Nav hrefs in `site.nav` must stay in sync.
 | 0 | (nav) | Sticky. Brand = `site.shortName` / `site.name`. Links + Email CTA |
 | 1 | `hero` | Status pill, oversized headline, subhead, Email + See work, scroll hint |
 | 2 | `work` | Featured project strip → `/work/[slug]` |
-| 3 | `about` | Bio, skills marquee, experience timeline |
+| 3 | `about` | Bio, optional current employer line, skills marquee |
 | 4 | `process` | Three numbered steps (Define / Build / Ship) |
 | 5 | `capabilities` | Four service-shaped cards (agency-ready) |
 | 6 | `proof` | Stats and/or articles if content exists |

@@ -4,6 +4,8 @@ import { Marquee } from "../marquee";
 import { SectionHeading } from "../section-heading";
 
 export function About() {
+  const employer = site.currentEmployer;
+
   return (
     <section id="about" className="py-24 md:py-32">
       <Container>
@@ -22,6 +24,20 @@ export function About() {
             </p>
           ))}
         </div>
+        {employer ? (
+          <p className="mt-10 text-lg leading-relaxed text-muted">
+            {employer.prefix}{" "}
+            <a
+              href={employer.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+            >
+              {employer.company}
+            </a>
+            .
+          </p>
+        ) : null}
       </Container>
 
       <div className="mt-16 border-y border-border py-6">
@@ -39,30 +55,6 @@ export function About() {
           ))}
         </Marquee>
       </div>
-
-      <Container className="mt-16">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
-          Experience
-        </p>
-        <ol className="mt-8 divide-y divide-border border-y border-border">
-          {site.experience.map((item) => (
-            <li
-              key={`${item.company}-${item.role}`}
-              className="grid gap-4 py-8 md:grid-cols-[12rem_1fr_8rem] md:items-start"
-            >
-              <div>
-                <p className="font-medium">{item.role}</p>
-                <p className="mt-1 text-muted">{item.company}</p>
-              </div>
-              <p className="text-muted leading-relaxed">{item.summary}</p>
-              <p className="font-mono text-xs uppercase tracking-[0.14em] text-muted md:text-right">
-                {item.current ? "Currently · " : null}
-                {item.period}
-              </p>
-            </li>
-          ))}
-        </ol>
-      </Container>
     </section>
   );
 }

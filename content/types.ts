@@ -14,12 +14,11 @@ export type Skill = {
   added?: boolean;
 };
 
-export type Experience = {
-  role: string;
+export type CurrentEmployer = {
   company: string;
-  period: string;
-  current?: boolean;
-  summary: string;
+  href: string;
+  /** Text before the company link, e.g. "Currently building digital products at". */
+  prefix: string;
 };
 
 export type Capability = {
@@ -83,7 +82,8 @@ export type SiteContent = {
   nav: NavItem[];
   socials: SocialLink[];
   skills: Skill[];
-  experience: Experience[];
+  /** Optional. One-line current role — drop when going studio. */
+  currentEmployer?: CurrentEmployer;
   process: ProcessStep[];
   capabilities: Capability[];
   stats: Stat[];

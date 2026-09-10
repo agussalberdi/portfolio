@@ -6,7 +6,7 @@ export { projects, site };
 export type {
   Article,
   Capability,
-  Experience,
+  CurrentEmployer,
   FaqItem,
   NavItem,
   ProcessStep,

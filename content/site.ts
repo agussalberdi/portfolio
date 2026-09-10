@@ -46,23 +46,11 @@ export const site: SiteContent = {
     { name: "Vercel", added: true },
     { name: "Git" },
   ],
-  experience: [
-    {
-      role: "Front End Engineer",
-      company: "Origin Markets",
-      period: "2022 — Present",
-      current: true,
-      summary:
-        "Shipped and evolved frontend surfaces for a fully digital debt capital markets platform. Focus on scalable UI architecture, performance, and translating complex financial flows into clear product.",
-    },
-    {
-      role: "Frontend engineering",
-      company: "Product & assessments",
-      period: "2018 — 2022",
-      summary:
-        "Built production-style apps and take-home products across iGaming, health, and marketing sites — Angular, React, and vanilla stacks with an emphasis on reusable components.",
-    },
-  ],
+  currentEmployer: {
+    prefix: "Currently building digital products at",
+    company: "DEPT®",
+    href: "https://www.deptagency.com/latam/",
+  },
   process: [
     {
       index: "01",

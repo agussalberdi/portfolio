@@ -31,7 +31,7 @@ You should not need to redesign the site to add a job, a project, or a skill.
 
 | What | File |
 | --- | --- |
-| Name, role, headline, bio, email, nav, skills, experience, process, capabilities, FAQ, SEO | [`content/site.ts`](content/site.ts) |
+| Name, role, headline, bio, email, nav, skills, optional employer, process, capabilities, FAQ, SEO | [`content/site.ts`](content/site.ts) |
 | Projects and case studies | [`content/projects.ts`](content/projects.ts) |
 
 ### Agency rename later
