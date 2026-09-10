@@ -1,8 +1,8 @@
 import { getFeaturedProjects } from "@/content";
 import { ButtonLink } from "../button-link";
 import { Container } from "../container";
-import { ProjectCard } from "../project-card";
 import { SectionHeading } from "../section-heading";
+import { WorkCarousel } from "../work-carousel";
 
 export function SelectedWork() {
   const featured = getFeaturedProjects();
@@ -23,13 +23,7 @@ export function SelectedWork() {
           </ButtonLink>
         </div>
       </Container>
-      <div className="mt-12 hide-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 md:mt-16 md:gap-6 md:px-8 lg:px-12">
-        {featured.map((project) => (
-          <div key={project.slug} className="snap-start">
-            <ProjectCard project={project} size="feature" />
-          </div>
-        ))}
-      </div>
+      <WorkCarousel projects={featured} className="mt-12 md:mt-16" />
     </section>
   );
 }
