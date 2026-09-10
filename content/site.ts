@@ -13,7 +13,7 @@ export const site: SiteContent = {
     "I build data-heavy products end to end — the interface people touch and the systems that keep it running.",
   bio: [
     "Full stack engineer with a frontend-first background in large data-flow applications. I spent years shipping production UIs in Angular, RxJS, and TypeScript, and I also work in React and Next.js when the product calls for it.",
-    "Now I take work from first pixel to production: interfaces, APIs, and the product decisions in between. I care about performance, reusable architecture, and a user journey that feels inevitable rather than clever.",
+    "Now I take work from first pixel to production: interfaces, APIs, and the product decisions in between. I care about performance, reusable architecture, and making complex flows feel simple.",
   ],
   nav: [
     { label: "Work", href: "/#work" },
@@ -118,7 +118,7 @@ export const site: SiteContent = {
     {
       question: "How do we start?",
       answer:
-        "Email me with the problem, the constraints, and a rough timeline. If it is a fit, we define a first slice and start there — not a 40-page proposal.",
+        "Email me with the problem, the constraints, and a rough timeline. If it is a fit, we define a first slice and start there.",
     },
     {
       question: "How long does a project take?",
@@ -131,14 +131,9 @@ export const site: SiteContent = {
         "Yes. I am based in Argentina (UTC−3) and work with teams in other timezones. Overlap hours are part of how I run an engagement.",
     },
     {
-      question: "Contract, freelance, or full-time?",
-      answer:
-        "Open to the shape that fits the work: contract, freelance, or a full-time role. Say what you need in the first email.",
-    },
-    {
       question: "Can you join an existing codebase?",
       answer:
-        "That is most of the job. I am used to large Angular and React apps, design systems already in flight, and shipping inside constraints rather than greenfield demos.",
+        "That is most of the job. I am used to large applications, design systems already in flight, and shipping inside constraints rather than greenfield demos.",
     },
   ],
   seo: {

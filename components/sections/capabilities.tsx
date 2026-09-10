@@ -10,7 +10,7 @@ export function Capabilities() {
           index="04"
           eyebrow="SYS // CAPABILITIES"
           title="What I take on"
-          description="Written so a studio name still fits. Frontend-led, full-stack when the product needs it."
+          description="Frontend-led, full-stack when the product needs it."
         />
         <ul className="grid gap-4 sm:grid-cols-2">
           {site.capabilities.map((capability, index) => (
