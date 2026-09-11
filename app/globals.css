@@ -256,6 +256,34 @@ details summary {
   animation: none;
 }
 
+.hero-orb-layer {
+  isolation: isolate;
+  opacity: 0.4;
+  mask-image: radial-gradient(circle at center, black 42%, transparent 76%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 42%,
+    transparent 76%
+  );
+}
+
+.hero-orb {
+  mix-blend-mode: screen;
+  transform-origin: center;
+  animation: hero-orb 18s ease-in-out infinite;
+}
+
+@keyframes hero-orb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-2%, 3%, 0) rotate(6deg) scale(1.04);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -263,7 +291,8 @@ details summary {
 
   .marquee-track,
   .cursor-glow,
-  .btn-primary {
+  .btn-primary,
+  .hero-orb {
     animation: none !important;
     box-shadow: none;
   }
