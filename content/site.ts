@@ -107,34 +107,33 @@ export const site: SiteContent = {
       href: "https://www.linkedin.com/pulse/angular-lazy-loading-your-feature-modules-agustin-alberdi-hernandez/",
     },
   ],
-  testimonials: [],
-  faq: [
+  testimonials: [
     {
-      question: "What do you actually build?",
-      answer:
-        "Product interfaces and the stack behind them. Most of my production work has been data-heavy frontends (Angular, React, TypeScript). I also take full-stack slices in Next.js when the product needs it.",
+      name: "David Cano Nieto",
+      role: "Senior Frontend Developer · Colleague",
+      quote:
+        "I had the pleasure of working alongside Agustin as a fellow front-end developer on a highly complex Angular project focused on bond pricing. From the start, Agustin impressed me with his technical depth, attention to detail, and ability to break down sophisticated requirements into clean, maintainable code.\n\nTogether, we delivered a high-performing, feature-rich application that was not only technically challenging but also critical for the business. Agustin was instrumental in shaping the architecture and ensuring best practices were followed throughout. Beyond his technical skills, he’s a great collaborator—easy to work with, proactive in tackling challenges, and always willing to help others on the team.\n\nAnyone would be lucky to have Agustin on their team. I hope we get to work together again in the future.",
     },
     {
-      question: "How do we start?",
-      answer:
-        "Email me with the problem, the constraints, and a rough timeline. If it is a fit, we define a first slice and start there.",
+      name: "Martin Cormier",
+      role: "Senior Manager · Colleague",
+      quote:
+        "I had the pleasure of hiring Agustin as a Senior Frontend Developer, specializing in Angular. From day one, he brought not only strong technical expertise but also a positive and collaborative energy that greatly benefited the team.\n\nAgustin is a problem-solver at heart. His open-minded attitude allows him to focus on solutions rather than obstacles, making him a key player in any development team. He is also highly adaptable, time and time again, he stepped outside his comfort zone to tackle new challenges successfully. One great example of this was his ability to go beyond frontend development, learning to interact with serverless backend endpoints and even contributing to their implementation.\n\nBeyond his technical skills, working with Agustin is a truly enjoyable experience. His professionalism, flexibility, and charming personality make him a valuable asset to any team. I highly recommend him to any organization looking for a talented and versatile developer.",
     },
     {
-      question: "How long does a project take?",
-      answer:
-        "A focused landing or UI slice can land in days. A production product surface is usually weeks, not months of theatre. I will tell you if the ask does not match the calendar.",
+      name: "Konstantin Gindemit",
+      role: "Full stack Engineer · Colleague",
+      quote:
+        "I had the pleasure of working with Agustin at PLAY, and I can confidently say he is an exceptional Front-End Developer. His expertise in Angular, NgRx, and RxJS is truly impressive, and he consistently delivers high-quality applications. Whenever I had a question about Angular, Agustin was always my go-to person.\n\nBeyond his technical skills, Agustin is a fantastic teammate—approachable, friendly, and always eager to collaborate. He has a strong problem-solving mindset and a passion for continuous learning, making him a valuable asset to any development team.\n\nIf you're looking for a dedicated and highly skilled Angular developer who combines technical excellence with a great attitude, I sincerely recommend Agustin!",
     },
     {
-      question: "Do you work remotely?",
-      answer:
-        "Yes. I am based in Argentina (UTC−3) and work with teams in other timezones. Overlap hours are part of how I run an engagement.",
-    },
-    {
-      question: "Can you join an existing codebase?",
-      answer:
-        "That is most of the job. I am used to large applications, design systems already in flight, and shipping inside constraints rather than greenfield demos.",
+      name: "Loren Grixti",
+      role: "Senior Frontend Developer · Colleague",
+      quote:
+        "I had the pleasure of working with Agustin on the frontend development team, and he was a truly valuable colleague. Agustin's key strength lies in his exceptional troubleshooting skills. He possesses a remarkable ability to persevere and find solutions to even the most complex problems.\n\nBeyond his technical abilities, Agustin was a fantastic team player. He has excellent collaboration skills and always contributed positively to the team dynamic. I particularly remember during our off-site event, he was great company and kept everyone's spirits high. He also had a habit of giving genuine compliments, which made everyone feel appreciated and valued.\n\nI highly recommend him for any team looking for a skilled and positive front-end developer.",
     },
   ],
+  faq: [],
   seo: {
     title: "Agustin Alberdi | Full Stack Engineer",
     description:

@@ -17,12 +17,39 @@ export function Proof() {
       <Container>
         <SectionHeading
           index="05"
-          eyebrow="SYS // PROOF"
-          title="Signal, not theatre"
+          eyebrow="SYS // REFERENCES"
+          title="What colleagues say"
         />
 
+        {hasTestimonials ? (
+          <ul className="grid items-stretch gap-4 md:grid-cols-2">
+            {site.testimonials.map((item) => (
+              <li
+                key={item.name}
+                className="flex h-full flex-col rounded-2xl border border-border bg-surface p-6 md:p-8"
+              >
+                <span
+                  aria-hidden="true"
+                  className="mb-4 block font-serif text-6xl leading-none text-accent md:text-7xl"
+                >
+                  “
+                </span>
+                <p className="whitespace-pre-line text-lg leading-relaxed">
+                  {item.quote}
+                </p>
+                <div className="mt-auto pt-8">
+                  <p className="font-medium">{item.name}</p>
+                  <p className="text-sm text-muted">{item.role}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : null}
+
         {hasStats ? (
-          <ul className="grid gap-4 sm:grid-cols-3">
+          <ul
+            className={`grid gap-4 sm:grid-cols-3 ${hasTestimonials ? "mt-12" : ""}`}
+          >
             {site.stats.map((stat) => (
               <li
                 key={stat.label}
@@ -38,7 +65,7 @@ export function Proof() {
         ) : null}
 
         {hasArticles ? (
-          <div className="mt-12">
+          <div className={hasTestimonials || hasStats ? "mt-12" : undefined}>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
               Writing
             </p>
@@ -61,21 +88,6 @@ export function Proof() {
               ))}
             </ul>
           </div>
-        ) : null}
-
-        {hasTestimonials ? (
-          <ul className="mt-12 grid gap-4 md:grid-cols-2">
-            {site.testimonials.map((item) => (
-              <li
-                key={item.name}
-                className="rounded-2xl border border-border bg-surface p-6 md:p-8"
-              >
-                <p className="text-lg leading-relaxed">“{item.quote}”</p>
-                <p className="mt-6 font-medium">{item.name}</p>
-                <p className="text-sm text-muted">{item.role}</p>
-              </li>
-            ))}
-          </ul>
         ) : null}
       </Container>
     </section>

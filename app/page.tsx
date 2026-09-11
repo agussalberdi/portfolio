@@ -1,7 +1,6 @@
 import { PageTransition } from "@/components/page-transition";
 import { About } from "@/components/sections/about";
 import { Capabilities } from "@/components/sections/capabilities";
-import { Faq } from "@/components/sections/faq";
 import { Hero } from "@/components/sections/hero";
 import { Process } from "@/components/sections/process";
 import { Proof } from "@/components/sections/proof";
@@ -17,7 +16,6 @@ export default function Home() {
         <Process />
         <Capabilities />
         <Proof />
-        <Faq />
       </div>
     </PageTransition>
   );

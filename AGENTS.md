@@ -20,16 +20,16 @@ This is a **Portfolite-inspired** personal site (dark, editorial, oversized type
 
 | File | Owns |
 | --- | --- |
-| `content/site.ts` | Name, role, headline, bio, nav, socials, skills, optional `currentEmployer`, process, capabilities, stats, articles, FAQ, SEO |
+| `content/site.ts` | Name, role, headline, bio, nav, socials, skills, optional `currentEmployer`, process, capabilities, stats, articles, testimonials, FAQ (hidden when empty), SEO |
 | `content/projects.ts` | All case studies |
 | `content/types.ts` | Shared types |
 | `content/index.ts` | Re-exports + `getProject`, `getFeaturedProjects`, `mailtoHref` |
 
 Rules:
 
-- Optional blocks (`testimonials`, `articles`, `stats`) **must not render** when their arrays are empty
+- Optional blocks (`testimonials`, `articles`, `stats`, `faq`) **must not render** when their arrays are empty
 - Skills with `added: true` were not on the old site — keep them easy to delete
-- Experience dates and new projects are expected to be edited by the owner; do not invent testimonials or fake metrics
+- Testimonials come from real LinkedIn recommendations received — do not invent quotes
 - Primary CTA is always email (`site.email` / `mailtoHref()`)
 
 ---
@@ -40,15 +40,16 @@ Use these `id`s. Nav hrefs in `site.nav` must stay in sync.
 
 | Order | `id` | Purpose |
 | --- | --- | --- |
-| 0 | (nav) | Sticky. Brand = `site.shortName` / `site.name`. Links + Email CTA |
-| 1 | `hero` | Status pill, oversized headline, subhead, Email + See work, scroll hint |
+| 0 | (nav) | Sticky. Logo only + links + Email CTA |
+| 1 | `hero` | Status pill (brand name), oversized headline, subhead, Email + See work, scroll hint |
 | 2 | `work` | Featured project strip → `/work/[slug]` |
 | 3 | `about` | Bio, optional current employer line, skills marquee |
 | 4 | `process` | Three numbered steps (Define / Build / Ship) |
 | 5 | `capabilities` | Four service-shaped cards (agency-ready) |
-| 6 | `proof` | Stats and/or articles if content exists |
-| 7 | `faq` | Accordion (`<details>` preferred) |
-| 8 | `contact` | Availability line, mailto, socials |
+| 6 | `proof` | LinkedIn references first when `testimonials` is non-empty; then stats/articles if present |
+| 7 | `contact` | Availability line, mailto, socials |
+
+FAQ (`components/sections/faq.tsx`) is kept in the repo but **not mounted** on the home page while `faq: []`. Re-add `<Faq />` when the array is populated again.
 
 Other routes:
 
